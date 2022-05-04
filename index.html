@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style/style.css">
+	<script src="scripts/gamePage.js"></script>
+	<audio autoplay loop><source src="sound/BGM.mp3" type="audio/mpeg"></audio>
+	<title></title>
+</head>
+<body onload="playButtonSound();">
+	<div class="index-bg" style="position: relative;" >
+		<div class="center buttonDiv" style="z-index: 100;">
+			<!-- <h2>Find someone to begin <br>your game!</h2> -->
+			<a href="gamePage.html" style="z-index: 100;">
+				<button class="indexBtn" style="z-index: 100;" onclick="playButtonSound()">Start</button>
+			</a> 
+
+			<a href="rule.html" style="z-index: 100;">
+				<button class="indexBtn" style="z-index: 100;" onclick="playButtonSound()" > Rules
+					<!-- <img class="indexBtn-img" src="img/rulesBtn.png"> -->
+				</button>
+			</a> 
+		</div>
+		<div class="index-gif">
+			<img src="img/gif/Main_Page.gif" class="index-gif">
+		</div>
+		<!-- <img src="img/ASTC_Logo.png" class="astc_logo">  -->
+	</div>						
+</body>
+</html>

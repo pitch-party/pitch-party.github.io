@@ -1,0 +1,1109 @@
+/*--------------------------------------------------
+# General
+--------------------------------------------------*/
+/*Scicom Blue: #29ABE2
+  Scicom Green: #BADD7F  */
+@font-face {
+    font-family: mainFontRegular;
+    src:url("font/EncodeSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: mainFontMedium;
+    src:url("font/EncodeSans-Medium.ttf");
+}
+
+@font-face {
+    font-family: mainFontBold;
+    src:url("font/EncodeSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: buttonFont;
+    src:url("font/BRLNSDB.TTF");
+}
+
+@media screen and (orientation: landscape) {
+  html {
+    /* Rotate the content container */
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    /* Set content width to viewport height */
+    width: 100vh;
+    /* Set content height to viewport width */
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
+
+
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+b{
+  font-family: "mainFontBold"; 
+}
+
+h1{
+  font-family: "mainFontBold"; 
+  font-size: 24px;
+}
+
+h2{
+  font-family: "mainFontMedium"; 
+  font-size: 22px;  
+}
+
+h3{
+  font-family: "mainFontRegular";
+  font-size: 18px;
+}
+
+p, h4{
+  font-family: "mainFontRegular";
+}
+
+.header{
+/*  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;*/
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+}
+
+.header button{
+  width: 10%;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.header a{
+  width: 10%;
+}
+
+.homeIcon {
+  width: 100%;
+  border: 2px solid #29ABE2;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 1px 2px grey;
+/*  opacity: 0.65;*/
+} 
+
+.generalBtn{
+  border: 2px solid #29ABE2;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 2px 2px grey;
+  font-size: 28px;
+  font-family: "buttonFont";
+  color: #29ABE2; 
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 35%;
+  font-size: 28px;
+}
+
+.generalBtn2{
+  border: 2px solid #29ABE2;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 2px 2px grey;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 60%;
+  font-size: 24px;
+  font-family: "buttonFont";
+  margin-top: 6%;
+  color: #29ABE2;
+}
+
+.generalBtn3{
+  border: 2px solid #29ABE2;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 2px 2px grey;
+  padding: 0% 2%;
+  width: 20%;
+  font-family: "buttonFont";
+  color: #29ABE2;
+  margin-right: 5%;
+}
+
+.generalBtn3 h2{
+  font-size: 16px;
+  font-family: "buttonFont"; 
+  margin: 0; 
+}
+
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+.foot{
+  height: 75px;
+}
+
+.show {display: block;}
+
+.hide {display: none;}
+
+/*--------------------------------------------------
+# index
+--------------------------------------------------*/
+
+.title {
+  width: 90%;
+  padding-top: 15%;
+} 
+
+.index-bg {
+  background-image: url("../img/coverBg.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.buttonDiv{
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.indexBtn{
+  border: 2px solid #29ABE2;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 1px 2px 2px grey;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  width: 100%;
+  font-size: 28px;
+  font-family: "buttonFont";
+  margin-top: 20%; 
+  color: #29ABE2; 
+}
+
+.indexBtn-img{
+  width: 100%;
+}
+
+.astc_logo{
+  width: 45%;
+  position:fixed;
+  bottom:0;
+  left: 0;
+}
+
+/*--------------------------------------------------
+# Rules
+--------------------------------------------------*/
+.rule-bg {
+  background-image: url("../img/rules/rule_background.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.rule-bg2 {
+  background-image: url("../img/rules/Rules-2.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.rule-mascoto-img{
+  position: absolute;
+  left: 25%;
+  top: 80%;
+  width: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.rule-header{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+  width: 100%;
+  margin: 0;
+}
+
+.rule-header button{
+  width: 12%;
+  padding: 0;
+  border: none;
+  background-color: none;
+  opacity: 0;
+}
+
+.rule-header a{
+  width: 12%;
+  
+}
+
+#ruleTitle{
+  margin-top: 0;
+  margin-bottom: 0;
+  position: absolute;
+  left: 50%;
+  top: 8%;
+  width: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.ruleText{
+  background-image: url("../img/rules/rules_bubble.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 90%;
+  height: 60%;
+  padding-left: 10%;
+  padding-right: 5%;
+  line-height: 120%;
+  color:black;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.ruleText li{
+  padding-left: 3%;
+  margin-top: 12%;
+  margin-bottom: 12%;
+}
+
+.ruleText ol{
+  padding-left: 12%;
+  padding-right: 7%;
+  margin-bottom: 0;
+  position: absolute;
+  font-size: 18px;
+  left: 50%;
+  top: 40%;
+  width: 90%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.ruleText p{
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  padding-left: 7%;
+  padding-right: 3%;
+}
+
+.ruleBtn{
+  float: right; 
+  margin-right: 12%;
+  position: absolute;
+  left: 70%;
+  top: 75%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: 2px solid #29ABE2;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 2px 2px grey;
+  font-size: 28px;
+  font-family: "buttonFont";
+  color: #29ABE2; 
+  padding-top: 3%;
+  padding-bottom: 3%;
+  width: 35%;
+  font-size: 28px;
+}
+
+/*--------------------------------------------------
+# Rules - Popup
+--------------------------------------------------*/
+.myModal{
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100% ;
+  overflow: auto ;
+  background-color: rgba(0,0,0,0.4);
+/*  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); */
+}
+
+/* Modal Content */
+.myModal-content {
+  background-color: #D2F2D9;
+  border: 1px solid #f1f1f1;
+  box-shadow: 1px 3px #e3e1e1;
+  border-radius: 10px;
+  width: 85%;
+  height: 88%;
+  padding: 3%;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+.myModal-content button{
+  border: 2px solid #f1f1f1;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 3px #e3e1e1;
+  width: 10%;
+  padding: 2%;
+}
+
+.modal-text{
+  margin-left: 3%;
+  margin-right: 3%;
+  line-height: 150%;
+}
+
+.popupRulesTitle h2{
+  margin-top: 0;
+  margin-bottom: 1%;
+  font-family: mainFontBold;
+}
+
+.popupRules{
+  padding-left: 5%;
+  padding-right: 5%;
+  line-height: 150%;
+  color: #4d4d4d;
+  font-family: mainFontRegular;
+}
+
+.popupRules li{
+  padding-left: 3%;
+  margin-bottom: 6%;
+}
+
+.popupRules ol{
+  padding-left: 8%;
+}
+
+/*--------------------------------------------------
+# Quit - Popup
+--------------------------------------------------*/
+.quit-content {
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  box-shadow: 1px 3px #e3e1e1;
+  border-radius: 10px;
+  width: 80%;
+  height: 40%;
+  padding: 3%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.quitText{
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  width: 80%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.quitBtn{
+  margin-right: 1%;
+  margin-left: 1%;
+}
+
+.quitBtnDiv{
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  }
+
+.quit-gameRecord{
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  width: 60%;
+  border-radius: 8px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #cccccc;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.quit-gameRecord-title{
+  font-family: "mainFontBold";
+  font-size: 16px;
+}
+#quit-round, #quit-score{
+  font-family: "mainFontBold";
+}
+
+/*--------------------------------------------------
+# GamePage - select roles
+--------------------------------------------------*/
+.mainText{
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  top: 25%;
+  line-height: 200%;
+}
+
+.mainText h2{
+  font-weight: normal;
+  color: #4E4E4E;
+  font-size: 24px;
+  line-height: 150%;
+  margin-bottom: 0;
+}
+
+.choiceBtn{
+  border: 2px solid #29ABE2;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 1px 2px 2px grey;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 80%;
+  font-size: 28px;
+  margin-top: 10%;
+  color: #29ABE2;
+  font-family: "buttonFont";
+}
+
+.choiceBtnDiv{
+  margin-top: 5%;
+}
+
+
+/*--------------------------------------------------
+# Designer Page
+--------------------------------------------------*/
+.designerPageText{
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  top: 10%;
+}
+
+
+.designerPageText h1{
+  color: #4d4d4d;
+  margin-top: 7%;
+}
+
+.designerPageText h3{
+  font-weight: normal;
+  color: #4d4d4d;
+  margin-top: 15%;
+  font-size: 24px;
+}
+
+.designerPage-img{
+  width: 100%;
+}
+
+.designer-txt{
+  font-size: 18px;
+  color: #4E4E4E;
+}
+
+.designPage-imgDiv{
+  width: 100%;
+  margin-top: 10%;
+}
+
+.designPage-img{
+  width: 100%;
+}
+
+#topicCode{
+  width: 55%;
+  height: 40px;
+  font-size: 13px;
+}
+
+::placeholder { 
+  color: #c4c4c4;
+}
+
+#checkDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkIcon, .inspirationIcon{
+  width: 100%;
+}
+
+.checkBtn{
+  width: 10%;
+  border: 2px solid #29ABE2;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 1px 1px 2px grey; 
+  padding:1%;
+  margin-left: 5%;
+}
+
+.designerBtn-div{
+  margin-top: 5%;
+}
+
+.designer-btn{
+  border: 2px solid #29ABE2;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 2px 2px grey;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 80%;
+  font-size: 24px;
+  margin-top: 10%;
+  color: #29ABE2;
+  font-family: "buttonFont";  
+}
+
+.designer-btn2{
+  border: 2px solid #29ABE2;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 2px 2px grey;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 80%;
+  font-size: 24px;
+  color: #29ABE2;
+  font-family: "buttonFont";  
+}
+
+.design-refinement{
+  background-color: rgb(241, 241, 241, 0.5);
+  width: 85%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #f1f1f1;
+  border-radius: 5px;
+  margin-top: 5%;  
+}
+
+.design-refinement-titleDiv{
+    display: flex;
+    justify-content: space-between;
+    vertical-align: baseline;
+}
+
+.design-refinement h4{
+    padding-top: 3%;
+}
+
+.design-refinement h3{
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+#designRefinement{
+  margin-bottom: 0;
+}
+
+#inspirationBtn{
+  width: 12%;
+  border: 2px solid #29ABE2;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 1px 1px 2px grey; 
+  padding:0;
+}
+
+.inspirationDiv{
+  display: flex;
+  justify-content: right;
+}
+
+#invalidCodeTxt{
+  font-size: 16px;
+  color: red;
+  font-family: "mainFontMedium";
+  margin-top: 5%;
+}
+
+/*----------- Inspiraton popup ---------------------*/
+
+.inspiration-content {
+  background-color: #D2F2D9;
+  border: 1px solid #f1f1f1;
+  box-shadow: 1px 3px #e3e1e1;
+  border-radius: 10px;
+  width: 90%;
+  height: 60%;
+  padding: 3%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#inspirationTitle1{
+  margin-top: 0;
+  margin-bottom: 1%;
+  font-family: mainFontBold;
+  font-size: 18px;
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  width: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); 
+}
+
+.inspiration-popup{
+  position: absolute;
+  height: 85%;
+  left: 50%;
+  top: 58%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); 
+}
+
+.Inspiration-img{
+  width: 70%;
+  height: 133px;
+}
+
+.crossIcon-img{
+  width: 100%;
+  background-color: white;
+}
+
+.crossIcon-btn{
+  border: 2px solid #29ABE2;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 3px #e3e1e1;
+  width: 10%;
+  padding: 1%;
+  background-color: white;
+  display: flex;
+  float: left;
+}
+
+.crossIcon-btnDiv{
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.Inspiration-txt{
+  font-size: 14px;
+  font-weight: normal !important;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-top: 8%;
+}
+
+.inspiration-indicator{
+  position: absolute;
+  top: 95%;
+  color: black;
+}
+
+.carousel .carousel-indicators button{background-color: #d9cccc;}
+.carousel .carousel-indicators .active {background-color: #bdb1b1;}
+
+span.carousel-control-next-icon {
+  background-image: url("../img/Icon/right-arrow.png");
+}
+
+span.carousel-control-prev-icon {
+  background-image: url("../img/Icon/left-arrow.png");
+}
+
+/*--------------------------------------------------
+# All Investor Pages
+--------------------------------------------------*/
+.investorpages-title{
+  font-size: 28px;
+  margin-top: 7%;
+}
+
+/*--------------------------------------------------
+# Investor Page 1
+--------------------------------------------------*/
+.investor-bg {
+  background-image: url("../img/investor/investor_bg.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.titleTxt{
+  margin-top: 3%;
+}
+
+.content{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-right: auto;
+  margin-left: auto;
+  width: 85%;
+  height: 40%;
+  padding-top: 15%;
+}
+
+.bottom-content{
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  height: 30%; 
+}
+
+#investorTopicCodeDiv{
+  background-color: #BADD7F; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, #9be8a4, #BADD7F , #d2f081);
+  border-radius: 15px;
+  position: absolute;
+  top: 12%;
+  left: 90%;
+  width: 23%;
+  transform: translate(-50%, -50%);
+  text-align: center; 
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+#investorTopicCode{
+  font-family: "mainFontBold"; 
+  margin: 0;
+}
+
+#investorTopicCodeTitle{
+  font-family: "mainFontRegular";
+  margin: 0; 
+  font-size: 10px;
+}
+
+#pitchTopic1, #pitchRefinement1{
+  font-family: "mainFontRegular" !important;
+  font-size: 18px !important;
+}
+
+.content h3{
+  font-family: "mainFontBold" !important;
+  font-size: 18px !important;  
+}
+
+.refinementText{
+  margin-bottom: 0;
+  font-size: 22px;
+}
+
+.investorPage1-note{
+  margin-top: 7%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 18px;
+}
+
+.rerollIcon{
+  width: 40%;
+}
+
+.investorPage1-btnDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7%;  
+}
+
+/*--------------------------------------------------
+ # Investor Page 2
+--------------------------------------------------*/
+.timerBlock{
+  background-color: rgb(241, 241, 241, 0.5);
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7%;
+  border: 2px solid #f1f1f1;
+  border-radius: 5px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.timerBlock h1{
+  font-size: 50px;
+  margin-left: 15%;
+}
+
+.timerBtn-img{
+  width: 100%;
+}
+
+.timerBtns{
+  width: 25%;
+  border: none;
+  background-color: transparent;
+}
+
+.refinement{
+  background-color: rgb(241, 241, 241, 0.5);
+  width: 75%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #f1f1f1;
+  border-radius: 5px;
+  margin-top: 5%;
+}
+
+.refinement-titleDiv{
+    text-align: left !important;
+}
+
+.refinement-title{
+  margin: 0;
+  font-size: 16px !important;
+  font-family: "mainFontMedium";
+  color: #4E4E4E;
+}
+
+.refinement span{
+  font-weight: bold;
+}
+
+.refinement-content{
+  font-size: 24px;
+}
+
+.refinement h3{
+  margin-top: 0;
+  font-weight: normal;
+}
+
+.seperateLine{
+  width: 95%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color:gray;
+  opacity: 0.5;
+  background-color:gray;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#pitchTopic2, #pitchRefinement2, #pitchTopic3, #pitchRefinement3,#pitchTopic4,#pitchRefinement4, #designTopic, #designRefinement, #personalInterest1 {
+  font-size: 20px;
+  font-family: "mainFontBold";
+  color: #4E4E4E;
+}
+
+/*--------------------------------------------------
+  # Investor Page 3
+--------------------------------------------------*/
+
+#investorPage3 button{
+  border: 2px solid #29ABE2;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 2px 2px grey;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 60%;
+  font-size: 24px;
+  font-family: "buttonFont";
+  margin-top: 3%;
+  margin-bottom: 3%;
+  color: #29ABE2;
+}
+
+/*--------------------------------------------------
+  # Investor Page 4
+--------------------------------------------------*/
+
+.endingTitleTxt{
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.accordion{
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+.accordion-item{
+  background-color: transparent !important;
+  border: 1px solid #f1f1f1 !important;
+}
+
+.accordion-button, .accordion-body{
+  background: rgba(241,241,241,0.5) !important;
+  font-size: 18px !important;
+  font-weight: normal;
+} 
+
+.accordion-button:focus{
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.accordion-body hr{
+  width: 80%;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  color:gray;
+  opacity: 0.8;
+  background-color:gray;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.accordion-body{
+  padding: 3% !important;
+}
+
+.note{
+  margin: 0;
+  font-size: 14px;
+}
+
+#personalInterest1{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/*--------------------------------------------------
+  # Win page
+--------------------------------------------------*/
+
+#win-nextBtn{
+  height: 20%;
+  width: 70%;
+}
+
+#win-nextBtn button{
+  margin-top: 5%;
+}
+
+
+/*--------------------------------------------------
+  # Animation (gif)
+--------------------------------------------------*/
+.index-gif{
+  width: 100%;
+  position:fixed;
+  bottom:0;
+  left: 0;
+  right: 0;
+}
+
+.rule-gif{
+  width: 100%;
+  position:fixed;
+  bottom:0;
+  left: 0;
+  right: 0;
+}
+
+.win-gif{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.win-gif-div{
+  width: 100%;
+}
+
+/*--------------------------------------------------
+  # Record
+--------------------------------------------------*/
+.record{
+  margin: 0 0 0 15px;
+  font-size: 14px;
+  font-family: "mainFontMedium";
+  color: #4E4E4E;
+}
+
+.recordDiv{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.trophy{
+  width: 20%;
+}
+
+.quit-recordDiv{
+  display: flex;
+  justify-content: center;
+  width: 80%;  
+}
