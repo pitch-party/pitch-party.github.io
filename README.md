@@ -7,12 +7,12 @@
 
 ## Page description
 
-* **index.html**: The page with start button and rule button
-* **gamePage.html**: The page of choosing funder and designer role for the first round
-* **gamePage2.html**:The page of choosing funder and designer role after the first round
-* **investorPage.html**: All investor pages
-* **designerPage.html**: All designer pages
-* **winPage.html**: The winning page after the pitch is accepted
+* **index.html**: The page with the Start button and Rules button
+* **gamePage.html**: The page for choosing Funder and Designer roles for the first round
+* **gamePage2.html**: The page for choosing Funder and Designer roles after the first round
+* **investorPage.html**: All Funder pages
+* **designerPage.html**: All Designer pages
+* **winPage.html**: The Designer's Pitch Accepted page 
 
 ## CSS description
 **style.css**: All the style are in this file.
@@ -66,7 +66,7 @@
       ...
   }
     ```
-    * Step 4: Scroll down to 17 (It's 17 because we skip two number for not using "I" and "O" in the topic code)
+    * Step 4: Scroll down to 17 (It's 17 because we skip two numbers due to not using "I" and "O" for topic codes)
     ```
   17:{
           topic : "Create a VR (Virtual Reality) experience on the pandemic",
@@ -85,7 +85,7 @@
           ]
     }
     ```
-    * Step 5: Add a comma in the end of } 
+    * Step 5: Add a comma after the } 
     ```
   17:{
           topic : "Create a VR (Virtual Reality) experience on the pandemic",
@@ -132,10 +132,10 @@
     },
     ```
     
-    ** **Make sure to add the comma in the end and not to add the comma in the last one**
+    ** **Make sure to add the comma at the end and not to add the comma for the last one**
     
     
-## How to add requirement
+## How to add Requirement
 * General information: 
     * They are stored in the array "refinements " in **contentGenerate.js**
 * Step by step:
@@ -169,7 +169,7 @@
       "Only lasts for 24 hours"
     ];    
     ```
-     * Step 3: Add a comma in the last row and add new requirement below
+     * Step 3: Add a comma in the last row and add new requirements below
     ```
     const refinements = [
       "Understandable for non-English speakers",
@@ -200,9 +200,9 @@
       "New Requirement 2"
     ];    
     ```
-    ** **Make sure not to add the comma in the last one**
+    ** **Make sure not to add the comma for the last one**
 
-## How to add wild card
+## How to add Wild Cards
 * General information: 
     * They are stored in the array "personalInterests " in **contentGenerate.js**
 * Step by step:
@@ -229,7 +229,7 @@
       "An exhibit that your boss would love"
     ];   
     ```
-     * Step 3: Add a comma in the last row and add new requirement below
+     * Step 3: Add a comma in the last row and add new requirements below
     ```
     const personalInterests=[
       "Makes you laugh out loud",
@@ -253,7 +253,7 @@
       "New wild card 2"
     ];   
     ```
-    ** **Make sure not to add the comma in the last one**
+    ** **Make sure not to add the comma for the last one**
 
 
 
